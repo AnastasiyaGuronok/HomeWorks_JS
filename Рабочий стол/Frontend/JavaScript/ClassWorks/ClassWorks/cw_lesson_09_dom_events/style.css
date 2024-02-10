@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body, input, button {
+    font-family: arial;
+    font-size: 22px;
+}
+
+body, input, button, .post, .post .content {
+    padding: 20px;
+}
+
+button {
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.block, .clickme, .bgchange, .links, .post {
+    margin-bottom: 30px;
+}
+
+.block {
+    width: 200px;
+    height: 200px;
+    background-color: lightGreen;
+}
+
+.bgchange button {
+    border: 0;
+    background: linear-gradient(to right, darkBlue, blue);
+    color: #fff;
+}
+
+.post {
+    border: 3px solid #ccc;
+}
+
+.post .content {
+    background-color: #ededed;
+}
+
+.links {
+    list-style: none;
+}
+
+.links a.active {
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+}
+
+.links a.hover {
+    color: green;
+    text-decoration: none;
+}
