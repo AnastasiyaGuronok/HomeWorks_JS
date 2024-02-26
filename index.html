@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+	<link rel="stylesheet" href="CSS/style.css"/>
+	<title>HW_9</title>
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="ToDo List" >
+			<div class="List_header">ToDo List</div>
+			<div class="List-body">
+				<form id="form">
+					<div class="form-group">
+						<input type="text" class="inputEnter" id="taskInput" placeholder="Type your task.." required>
+                        <button type="submit" class="Add_button">Добавить</button>
+					</div>
+					
+				</form>
+			</div>
+		
+		<div class="list_of_tasks">
+			<ul id="tasksList"  class="Tasks_List">
+                 
+
+			</ul>
+		</div>
+        </div>
+            
+            <button id="removeTasks" data-action="deleteAll" class="remove_Tasks">Очистить список</button> 
+
+        </div>
+
+        
+	<script src="JS/script.js"></script>
+</body>
+</html>

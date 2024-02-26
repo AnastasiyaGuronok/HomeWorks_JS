@@ -1,0 +1,96 @@
+
+  body {
+    background-color: #E4E5E7;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+  
+  }
+
+  .container {
+    width: 800;
+
+  }
+
+  .List_header {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #f0f1f2;
+    padding: 10px 0px;
+    border: 1px solid #d2d3d4;
+  }
+
+  .form-group {
+    border: 1px solid #d2d3d4;
+    background-color: #f8f9f0;
+  }
+
+  .inputEnter {
+    padding: 10px 5px;
+    width: 740px;
+    margin: 10px 30px;
+  }
+
+
+  .Add_button {
+    margin: 0px 30px;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-family: serif;
+  }
+
+  .remove_Tasks {
+    margin: 0px 30px;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-family: serif;
+  }
+
+  .d-flex {
+    display: flex;
+  }
+
+  .task-title--done {
+    text-decoration: line-through;
+    color: #CDCDCD;
+  }
+
+  .list-group-item {
+    border: 1px solid #d2d3d4;
+    background-color: white;
+    padding-left: 0px;
+    align-items: center;
+  }
+  .btn-action {
+      background-color: white;
+      padding: 8px 10px;
+      cursor: pointer;
+      border: 0;
+      border-radius: 4px;
+      transition: opacity 0.2s ease-in;
+      opacity: 0.5;
+  
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .btn-action:hover {
+      background-color: white;
+      opacity: 1;
+  }
+  
+  .btn-action img {
+    pointer-events: none;
+  }
+  .none {
+    display: none !important; 
+  }
+  
+ 
