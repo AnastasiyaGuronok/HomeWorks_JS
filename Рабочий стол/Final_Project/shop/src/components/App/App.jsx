@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
 
+import '../../styles/media.css';
+
 import AppRoutes from "../Routes/Routes";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
@@ -24,7 +26,9 @@ const App = () => {
       <Header />
       <UserForm />
       <div className="container">
-        <Sidebar />
+      
+            <Sidebar />
+        
         <AppRoutes />
       </div>
       <Footer />
