@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai';
 
 import styles from "../../styles/Sidebar.module.css";
-import '../../styles/media.css';
 
 import { NavLink } from "react-router-dom";
 import { useSelector } from "react-redux";

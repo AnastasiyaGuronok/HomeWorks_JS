@@ -1,9 +1,6 @@
 import React from "react";
 
 import styles from "../../styles/Home.module.css";
-import '../../styles/media.css';
-
-
 
 import BG from "../../images/computer.png";
 
