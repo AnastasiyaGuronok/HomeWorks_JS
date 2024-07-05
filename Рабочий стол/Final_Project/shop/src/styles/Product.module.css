@@ -130,3 +130,65 @@
   cursor: not-allowed;
   background: var(--bg);
 }
+
+@media screen and (max-width: 1216px) {
+  button {
+    font-size: 12px;
+  }
+  
+}
+
+@media screen and (max-width: 1188px) {
+  .product {
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .actions {
+    padding-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .product {
+    justify-content: center;
+    max-width: 100%;
+  }
+}
+
+  @media screen and (max-width: 498px) {
+    .current {
+     width: 375px;
+     height: 280px;
+     
+    }
+
+  }
+
+  @media screen and (max-width: 430px) {
+    .current {
+     width: 310px;
+     height: 260px;
+     
+    }
+
+    .images {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .images-list {
+      flex-direction: row;
+      justify-content: center;
+      gap: 20px;
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 332px) {
+     button {
+      font-size: 12px;
+     }
+  }
+

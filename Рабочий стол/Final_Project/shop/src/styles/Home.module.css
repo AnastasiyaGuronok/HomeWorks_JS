@@ -163,7 +163,7 @@
 @media screen and (max-width: 534px) {
 
 
-    img {
+    .home img {
       display: none;
     }
 
@@ -198,5 +198,70 @@
 
   }
 
+}
+
+@media screen and (max-width: 1288px) {
+
+  .banner {
+    padding-left: 20px;
+    padding-right: 20px;
+
+  }
+
+  .right {
+    background-position:center;
+    
+  }
+}
+
+@media screen and (max-width: 1008px) {
+
+  .left {
+     width: 100%;
+  }
+
+  .right {
+    display: none;
+    
+  }
+
+}
+
+@media screen and (max-width: 620px) {
+
+  .left {
+     width: 100%;
+  }
+
+  .right {
+    display: none;
+    
+  }
+
+  .left:before,
+  .left:after {
+    background: none;
+  }
+
+  .banner {
+    height: 470px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+
+  .content {
+    font-size: 100%;
+    line-height: 0px;
+  }
+
+  .content span {
+    font-size: 100px;
+    
+  }
+
+  .banner {
+    height: 400px;
+  }
 }
 

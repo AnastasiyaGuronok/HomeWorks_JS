@@ -193,4 +193,8 @@
     flex-direction: column;
     gap: 20px;
   }
+
+  .logo {
+    width: 100px;
+  }
 }

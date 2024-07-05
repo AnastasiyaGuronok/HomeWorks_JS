@@ -135,3 +135,42 @@
 .total span {
   color: #fff;
 }
+
+@media screen and (max-width: 1024px) {
+  .cart {
+    width: 100%;
+  }
+
+    .info {
+      margin-right: 10px;
+    }
+}
+
+
+@media screen and (max-width: 717px) {
+  .item {
+    height: auto;
+  }
+
+  .total {
+    padding-left: 10px;
+  }
+}
+@media screen and (max-width: 528px) {
+  .name {
+    font-size: 10px;
+  }
+
+  .total {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 484px) {
+  .item {
+    grid-template-columns: 100px 2fr 1fr;
+    row-gap: 10px;
+  }
+
+  
+}
