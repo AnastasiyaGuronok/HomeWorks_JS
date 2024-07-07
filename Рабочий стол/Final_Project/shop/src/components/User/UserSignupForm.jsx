@@ -36,13 +36,13 @@ const UserSignupForm = ({ toggleCurrentFormType, closeForm }) => {
         </svg>
       </div>
 
-      <div className={styles.title}>Sign Up</div>
+      <div className={styles.title}>Register</div>
 
       <form className={styles.form} onSubmit={handleSubmit}>
         <div className={styles.group}>
           <input
             type="email"
-            placeholder="Your email"
+            placeholder="Email"
             name="email"
             value={values.email}
             autoComplete="off"
@@ -53,20 +53,8 @@ const UserSignupForm = ({ toggleCurrentFormType, closeForm }) => {
 
         <div className={styles.group}>
           <input
-            type="name"
-            placeholder="Your name"
-            name="name"
-            value={values.name}
-            autoComplete="off"
-            onChange={handleChange}
-            required
-          />
-        </div>
-
-        <div className={styles.group}>
-          <input
             type="password"
-            placeholder="Your password"
+            placeholder="Password"
             name="password"
             value={values.password}
             autoComplete="off"
@@ -77,10 +65,10 @@ const UserSignupForm = ({ toggleCurrentFormType, closeForm }) => {
 
         <div className={styles.group}>
           <input
-            type="avatar"
-            placeholder="Your avatar"
-            name="avatar"
-            value={values.avatar}
+            type="name"
+            placeholder="Username"
+            name="name"
+            value={values.name}
             autoComplete="off"
             onChange={handleChange}
             required
