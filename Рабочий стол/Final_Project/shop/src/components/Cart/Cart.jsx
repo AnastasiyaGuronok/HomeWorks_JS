@@ -1,4 +1,3 @@
-import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
   addItemToCart,
@@ -7,10 +6,15 @@ import {
 
 import styles from "../../styles/Cart.module.css";
 import { sumBy } from "../../utils/common";
+import { useEffect } from "react";
+
+
+
+
 
 const Cart = () => {
   const dispatch = useDispatch();
-  const { cart } = useSelector(({ user }) => user);
+  const  [ cart ] = useSelector(({ user }) => user);
 
   const changeQuantity = (item, quantity) => {
     dispatch(addItemToCart({ ...item, quantity }));
@@ -20,6 +24,14 @@ const Cart = () => {
     dispatch(removeItemFromCart(id));
   };
 
+  useEffect (() => {
+    cart(JSON.parse(window.localStorage.getItem('cart')));
+  }, []);
+
+  useEffect(() => {
+    window.localStorage.setItem('cart', cart);
+  }, [cart]);
+ 
   return (
     <section className={styles.cart}>
       <h2 className={styles.title}>Your cart</h2>
@@ -30,8 +42,8 @@ const Cart = () => {
         <>
           <div className={styles.list}>
             {cart.map((item) => {
-              const { title, category, images, price, id, quantity } = item;
-
+             const { title, category, images, price, id, quantity } = item;
+        
               return (
                 <div className={styles.item} key={id}>
                   <div
@@ -107,5 +119,6 @@ const Cart = () => {
     </section>
   );
 };
+
 
 export default Cart;
